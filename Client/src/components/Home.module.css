@@ -1,0 +1,212 @@
+.homeContainer {
+    font-family: 'Arial, sans-serif';
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('../assets/bustrip.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+
+
+  }
+
+  
+  .heroContent h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+  
+  .heroContent h1 span {
+    color: #ffffff; /* Accent color */
+  }
+  
+  .heroContent p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+  
+  .ctaButton {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #e68900;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .featuresGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .featureCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featureCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .featureCard h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #ff9800;
+  }
+  
+  .featureCard p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* How It Works Section */
+  .howItWorks {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .howItWorks h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .step {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step h3 {
+    font-size: 1.5em;
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .testimonialCard {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonialCard img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialCard p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .testimonialCard h4 {
+    font-size: 1em;
+    color: #ff9800;
+  }
+  
+  /* Call to Action Section */
+  .callToAction {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .callToAction h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .callToAction .ctaButton {
+    background-color: white;
+    color: #ff9800;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .callToAction .ctaButton:hover {
+    background-color: #e68900;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featuresGrid, .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .featureCard, .step {
+      width: 80%;
+    }
+  }
+  
