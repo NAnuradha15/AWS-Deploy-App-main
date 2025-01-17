@@ -5,6 +5,25 @@ const dotenv = require('dotenv');
 const bodyParser = require('body-parser'); //js middleware
 require("dotenv").config();
 const session = require('express-session');
+const swaggerUi = require('swagger-ui-express');
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerOptions = {
+    swaggerDefinition: {
+      openapi: "3.0.0", // Swagger version
+      info: {
+        title: "Bus Booking API",      // API Title
+        version: "1.0.0",              // API Version
+        description: "API documentation for Bus Booking System"  // API Description
+      },
+      servers: [
+        {
+          url: "http://localhost:5000"  // Your server URL
+        }
+      ]
+    },
+    apis: ["./routes/*.js"]  // Path to your API route files for documentation
+  };
+
 
 
 const app = express();
@@ -42,6 +61,8 @@ app.use("/trip", Trip);
 // const User = require('./routes/User.js');
 // app.use("/User", User);
 
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 app.listen(port, () => {
